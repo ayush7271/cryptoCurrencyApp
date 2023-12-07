@@ -1,1 +1,4 @@
 @import url('./tailwind/tailwind.output.scss');
+.container{
+    background-image: url(./images/banner2.jpg);
+}
