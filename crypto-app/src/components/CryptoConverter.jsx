@@ -74,7 +74,7 @@ export const CryptoConverter = ({
             .map((i, j) => (
               <>
                 <div
-                  className="w-[90%] h-[50px] m-auto bg-[] mt-[10px] flex justify-around rounded-xl"
+                  className="w-[90%] h-[50px] m-auto bg-[] mt-[10px] flex justify-around rounded-xl cursor-pointer"
                   onClick={() => navigate(`/${i.id}`)}
                 >
                   <div className="w-[80px] h-[50px] text-[#FFFFFF]  bg-[] pt-[10px] flex">
@@ -112,10 +112,10 @@ export const CryptoConverter = ({
             ))}
 
           <div className="text-[#FFFFFF] h-[100px] bg-[black]">
-            <div className="w-[60%] m-auto flex justify-around mt-[15px]">
+            <div className="w-[400px] m-auto flex justify-around mt-[15px]">
               {[...Array(10)].map((i, j) => (
                 <div
-                  className="w-[10px] h-[10px]"
+                  className="w-[10px] h-[10px] cursor-pointer"
                   onClick={() => {
                     handlePage((j + 1) * 10);
                   }}

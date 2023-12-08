@@ -123,13 +123,13 @@ export const CoinGraph = ({ currency }) => {
           </>
         )}
         <div className="flex justify-around">
-          <div className="w-[100px] h-[40px] rounded-lg bg-[yellow] text-[25px] text-center pt-[2px]" onClick={()=>{handleDays(1)}}>
+          <div className="w-[100px] h-[40px] rounded-lg bg-[yellow] text-[25px] text-center pt-[2px] cursor-pointer" onClick={()=>{handleDays(1)}}>
             24hr
           </div>
-          <div className="w-[100px] h-[40px] rounded-lg bg-[yellow] text-[25px] text-center pt-[2px]" onClick={()=>{handleDays(7)}}>
+          <div className="w-[100px] h-[40px] rounded-lg bg-[yellow] text-[25px] text-center pt-[2px] cursor-pointer " onClick={()=>{handleDays(7)}}>
             7 days
           </div>
-          <div className="w-[100px] h-[40px] rounded-lg bg-[yellow] text-[25px] text-center pt-[2px]" onClick={()=>{handleDays(30)}}>
+          <div className="w-[100px] h-[40px] rounded-lg bg-[yellow] text-[25px] text-center pt-[2px] cursor-pointer" onClick={()=>{handleDays(30)}}>
             30days
           </div>
         </div>
