@@ -6,7 +6,7 @@
 
 ### Pages & Features 👇
 
-- `Home Page`: Nav Bar with option of change currency.
+- `Home Page`: NavBar with option of change currency.
 - `Search`: User can search for any of coin from list.
 - `CoinConverter`: User can see price of coin based on currency.
 - `coingraph`: User can visualize the price variation on graph on day basis like today, last 7 days, last 30 days .
