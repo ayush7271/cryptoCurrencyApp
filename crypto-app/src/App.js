@@ -19,11 +19,11 @@ const App = () => {
             </>
           }
         ></Route>
-             <Route
+        <Route
           path="/:id"
           element={
             <>
-            <CoinGraph/>
+              <CoinGraph currency={currency} />
             </>
           }
         ></Route>

@@ -16,7 +16,7 @@ export const Navbar = ({setCurrency}) => {
         Crypto Hunter
       </div>
       <div className="w-[180px] pt-[18px] text-[25px]">
-        <select onChange={(e)=>setCurrency(e.target.value)}>
+        <select onChange={(e)=>setCurrency(e.target.value)} className="rounded-lg">
           <option value={"inr"}>currency</option>
 
           {getallCurrency?.map((i, j) => (

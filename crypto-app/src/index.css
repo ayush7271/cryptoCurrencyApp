@@ -1,1 +1,14 @@
 @import url("./tailwind/tailwind.output.scss");
+
+@media screen and (min-width: 768px) {
+  .coingraph {
+    display: flex;
+    justify-content: space-between;
+  }
+  .c1 {
+    width: 40%;
+  }
+  .graphbox {
+    width: 60%;
+  }
+}
