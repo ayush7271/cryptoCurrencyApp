@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./carousel.css";
 import addCommaToCurrency from "./common";
-const Carousel = ({ data }) => {
+const Carousel = ({ data, currency }) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -35,14 +35,22 @@ const Carousel = ({ data }) => {
                           {coin?.symbol}
                         </div>
                         <div className="text-[15px] ml-[5px] font-bold  text-[green] opacity-80 mt-[10px] mb-[10px]">
-                          {coin?.market_cap_change_percentage_24h > 0
-                            ? "+" +
-                              coin?.market_cap_change_percentage_24h.toFixed(2)
-                            :<p className="text-[red]">{coin?.market_cap_change_percentage_24h.toFixed(2)}</p>}
+                          {coin?.market_cap_change_percentage_24h > 0 ? (
+                            "+" +
+                            coin?.market_cap_change_percentage_24h.toFixed(2)
+                          ) : (
+                            <p className="text-[red]">
+                              {coin?.market_cap_change_percentage_24h.toFixed(
+                                2
+                              )}
+                            </p>
+                          )}
                         </div>
                       </div>
                       <div className=" text-[#373737]">
-                        <div className="w-[80%] m-auto text-left text-[15px] text-[#FFFFFF]">{addCommaToCurrency(coin?.current_price)}</div>
+                        <div className="w-[80%] m-auto text-left text-[15px] text-[#FFFFFF]">
+                          {addCommaToCurrency(coin?.current_price, currency)}
+                        </div>
                       </div>
                     </div>
                   </div>

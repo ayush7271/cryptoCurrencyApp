@@ -24,7 +24,7 @@ function addingCommasToNumber(x) {
   }
   return `${res}`;
 }
-export default function addCommaToCurrency(value, currency = "INR") {
+export default function addCommaToCurrency(value, currency) {
   const currencySymbol = getSymbolFromCurrency(currency || "INR");
   const valueInString = value + "";
   const x = valueInString.split(".");
