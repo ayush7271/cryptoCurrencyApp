@@ -43,7 +43,7 @@ function* trendingCoinRequestSaga(param) {
   try {
     const response = yield call(() =>
       callAPI({
-        url: `${BASE_URI}/coins/markets?vs_currency=${currency}&order=gecko_desc&per_page=${page}&page=1&sparkline=false&price_change_percentage=24h`,
+        url: `${BASE_URI}/coins/markets?vs_currency=${currency}&order=gecko_desc&per_page=10&page=${page}&sparkline=false&price_change_percentage=24h`,
         headers: headers,
       })
     );

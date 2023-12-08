@@ -117,7 +117,7 @@ export const CryptoConverter = ({
                 <div
                   className="w-[10px] h-[10px] cursor-pointer"
                   onClick={() => {
-                    handlePage((j + 1) * 10);
+                    handlePage((j + 1));
                   }}
                 >
                   {j + 1}
